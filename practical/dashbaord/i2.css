@@ -1,0 +1,76 @@
+.control {}
+
+.control-align h1 {
+    margin-left: 80px;
+    background-color: black;
+    color: green;
+
+}
+
+.btns {
+    position: absolute;
+    background-color: black;
+    margin-left: 1500px;
+    margin-top: -50px;
+
+}
+
+.btns button {
+    background-color: black;
+    color: green;
+}
+
+.content {
+    /* background-color: green; */
+    width: 90%;
+
+    margin-left: 80px;
+
+}
+
+table {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    border-collapse: collapse;
+
+
+}
+
+.t1 tr {
+    border-bottom: black;
+}
+
+.t2 table {
+    text-align: left;
+    width: 80%;
+    margin-left: 80px;
+}
+
+.t2 td tr {
+    width: 5px;
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r3 {
+    background-color: red;
+}
+
+.r5 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: aqua;
+}
+
+.r4 {
+    background-color: aqua;
+}
+
+.he1 {
+    margin-left: 90px;
+}

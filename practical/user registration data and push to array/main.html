@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration</title>
+</head>
+
+<body>
+    <form id="userreg">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+
+            <tr>
+                <td>Enter email</td>
+                <td><input type="email" id="mail" name="mail" required></td> <!-- Fixed missing closing '>' -->
+            </tr>
+
+            <tr>
+                <td>Enter password</td>
+                <td><input type="password" id="password" name="password" required></td>
+                <!-- Fixed missing id attribute -->
+            </tr>
+
+        </table>
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        function formahandle(event) {
+            event.preventDefault(); // Prevent form submission until data is processed
+
+            const user = {
+                username: document.getElementById('username').value,
+                email: document.getElementById('mail').value, // Use 'mail' as the id for the email input
+                password: document.getElementById('password').value
+            };
+
+            if (typeof (Storage) !== 'undefined') {
+                const users = JSON.parse(localStorage.getItem('users')) || [];
+                users.push(user);
+                localStorage.setItem('users', JSON.stringify(users));
+                window.location.href = 'userlist.html'; // Corrected the redirect syntax
+            } else {
+                alert("Sorry, an error occurred.");
+            }
+        }
+
+        document.getElementById('userreg').addEventListener('submit', formahandle);
+    </script>
+
+</body>
+
+</html>

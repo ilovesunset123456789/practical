@@ -1,0 +1,61 @@
+table {
+    border: solid 2px;
+    border-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    border: solid 2px black;
+}
+
+td {
+    background-color: rgb(53, 157, 255);
+    border: solid 1px;
+    padding: 4px;
+}
+
+.firstcol {
+    padding-left: 2px;
+    padding-right: 5px;
+
+}
+
+.tableheading {
+    background-color: yellow;
+    border: solid 2px black;
+    font-size: 25px;
+    color: red;
+}
+
+.secondcol {
+    padding-left: 15px;
+}
+
+select {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputfile {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 5px;
+}
+
+body {
+    /* margin-left: 35%;
+    margin-top: 5%;*/
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #e9dec4;
+    padding: 20px;
+    /* Optional: Add padding to the container */
+
+    /* Make the container fit its content */
+}

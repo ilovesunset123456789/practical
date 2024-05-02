@@ -1,0 +1,22 @@
+table {
+    width: 90%;
+    border-radius: 10px;
+    background-color: red;
+}
+
+body {
+    background-color: blue;
+    color: darkgoldenrod;
+}
+
+tr {
+    background-color: grey;
+}
+
+table a:hover {
+    color: green;
+}
+
+ul {
+    type: "circle";
+}

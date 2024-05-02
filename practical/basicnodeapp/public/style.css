@@ -1,0 +1,95 @@
+.control {}
+
+table {
+    background-color: rgb(149, 225, 241);
+    width: 100%;
+    height: 50px;
+
+}
+
+.nav {
+    margin-top: 30px;
+}
+
+td {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+.topnav td {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topnav table {
+    background-color: rgb(233, 191, 129);
+    height: 100px;
+}
+
+.topnav td:hover {
+    color: red;
+}
+
+.imgs {
+    display: flex;
+    height: 250px;
+    width: 100px;
+    border-spacing: 20px;
+
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.i1 {
+    margin-left: 25px;
+
+}
+
+.i2 {
+    margin-left: 200px;
+
+}
+
+.i3 {
+    margin-left: 200px;
+    margin-right: 150;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px; */
+}
+
+p {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+
+}
+
+ul {
+    flex-direction: column;
+}

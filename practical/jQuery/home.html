@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Mobile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .myfooter a {
+            a:hover {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" style="background-color: aqua;">
+            <h1>Pune Institute of Computer Techonology</h1>
+            <h4>(An Autonomous Institute affiliated to Savitribai Phule Pune University)</h4>
+            <h4> AICTE APPROVED | ISO 9001:2015 | NAAC A+ Grade | NBA [All Eligible UG Programs]</h4>
+        </div>
+        <div data-role="navbar" data-grid="c">
+            <ul class="mynav" style="background-color: blanchedalmond;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About US</a></li>
+                <li><a href="#department">Departments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- contents -->
+        <div data-role="content" style="background-color: rgb(189, 240, 177);">
+            <h2>Welcome to PICT</h2>
+            <p style="text-align: justify;color: blue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                quas, saepe
+                recusandae consequatur illum
+                velit non aperiam repellat culpa quidem ratione a dicta doloribus expedita pariatur ipsum? Accusantium,
+                autem corrupti.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio maxime recusandae,
+                accusamus rem aliquamLorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus quas
+                doloribus culpa at labore ipsum accusantium consectetur tempora consequatur ullam alias aperiam
+                consequuntur esse aliquid saepe, iste, vitae illumin amet qui nemo laboriosam non earum consequuntur
+                exercitationem ducimus quas dolore beatae
+                necessitatibus numquam excepturi.</p>
+        </div>
+        <div data-role="content" style="background-color: rgb(189, 240, 177);">
+            <h2>Mission</h2>
+            <p style="text-align: justify;color: blue;">To be the leading and the most sought after institute of
+                education and
+                research in emerging engineering and technology disciplines that attract, retains and sustains gifted
+                individuals of significant potential.</p>
+
+        </div>
+
+        <div data-role="content" style="background-color: rgb(189, 240, 177);">
+            <h2>Vision</h2>
+            <p style="text-align: justify;color: blue;">Pune Institute of Computer Technology aspires to be the leader
+                in Higher
+                technical education and research of International repute.</p>
+
+        </div>
+        <!-- footer -->
+        <center>
+            <div class="myfooter" data-role="footer" style="background-color: bisque;">
+
+                <h2>Quick Access</h2>
+                <h3><a href="#home">Home</a></h3>
+                <h3><a href="#aboutus">About Us</a></h3>
+                <h3><a href="#department">Department</a></h3>
+                <h3><a href="#contact">Contact</a></h3>
+
+            </div>
+        </center>
+
+
+    </div>
+    <script>
+        $(document).on("pagecreate", "#home", function () {
+            $(this).on("swiperight", function () {
+                $.mobile.changePage("#aboutus", { transition: "slide", reverse: true });
+            });
+
+            $(this).on("swipeleft", function () {
+                $.mobile.changePage("#contact", { transition: "slide" });
+            });
+        });
+    </script>
+
+    <!--***********************************************************************************************************************  -->
+    <div data-role="page" id="aboutus">
+        <div data-role="header" style="background-color: aqua;">
+            <h1>Pune Institute of Computer Techonology</h1>
+            <h4>(An Autonomous Institute affiliated to Savitribai Phule Pune University)</h4>
+            <h4> AICTE APPROVED | ISO 9001:2015 | NAAC A+ Grade | NBA [All Eligible UG Programs]</h4>
+        </div>
+        <div data-role="navbar" data-grid="c">
+            <ul class="mynav" style="background-color: blanchedalmond;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About US</a></li>
+                <li><a href="#department">Departments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content" style="background-color: rgb(189, 240, 177);">
+            <h2>We are PICT</h2>
+            <p style="text-align: justify;color: blue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                quas, saepe
+                recusandae consequatur illum
+                velit non aperiam repellat culpa quidem ratione a dicta doloribus expedita pariatur ipsum? Accusantium,
+                autem corrupti.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio maxime recusandae,
+                accusamus rem aliquamLorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus quas
+                doloribus culpa at labore ipsum accusantium consectetur tempora consequatur ullam alias aperiam
+                consequuntur esse aliquid saepe, iste, vitae illumin amet qui nemo laboriosam non earum consequuntur
+                exercitationem ducimus quas dolore beatae
+                necessitatibus numquam excepturi.</p>
+        </div>
+
+        <div data-role="content" style="background-color: rgb(189, 240, 177);">
+            <div data-role="rows">
+                <img src="./cllg.jpg" alt="">
+            </div>
+
+        </div>
+        <center>
+            <div class="myfooter" data-role="footer" style="background-color: bisque;">
+
+                <h2>Quick Access</h2>
+                <h3><a href="#home">Home</a></h3>
+                <h3><a href="#aboutus">About Us</a></h3>
+                <h3><a href="#department">Department</a></h3>
+                <h3><a href="#contact">Contact</a></h3>
+
+            </div>
+        </center>
+
+
+    </div>
+    <script>
+        $(document).on("pagecreate", "#aboutus", function () {
+            $(this).on("swiperight", function () {
+                $.mobile.changePage("#department", { transition: "slide", reverse: true });
+            });
+
+            $(this).on("swipeleft", function () {
+                $.mobile.changePage("#home", { transition: "slide" });
+            });
+        });</script>
+
+    <!-- ****************************************************************************************************************************** -->
+
+
+
+    <div data-role="page" id="department">
+        <div data-role="header" style="background-color: aqua;">
+            <h1>Pune Institute of Computer Techonology</h1>
+            <h4>(An Autonomous Institute affiliated to Savitribai Phule Pune University)</h4>
+            <h4> AICTE APPROVED | ISO 9001:2015 | NAAC A+ Grade | NBA [All Eligible UG Programs]</h4>
+        </div>
+        <div data-role="navbar" data-grid="c">
+            <ul class="mynav" style="background-color: blanchedalmond;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About US</a></li>
+                <li><a href="#department">Departments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>Computer Science (CS)</h3>
+                <p>CS department details go here...</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>Information Technology (IT)</h3>
+                <p>IT department details go here...</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>Electronics and Telecommunication (ENTC)</h3>
+                <p>ENTC department details go here...</p>
+            </div>
+        </div>
+
+
+        <center>
+            <div class="myfooter" data-role="footer" style="background-color: bisque;">
+
+                <h2>Quick Access</h2>
+                <h3><a href="#home">Home</a></h3>
+                <h3><a href="#aboutus">About Us</a></h3>
+                <h3><a href="#department">Department</a></h3>
+                <h3><a href="#contact">Contact</a></h3>
+
+            </div>
+        </center>
+    </div>
+    </div>
+    <script>
+        $(document).on("pagecreate", "#department", function () {
+            $(this).on("swiperight", function () {
+                $.mobile.changePage("#contact", { transition: "slide", reverse: true });
+            });
+
+            $(this).on("swipeleft", function () {
+                $.mobile.changePage("#aboutus", { transition: "slide" });
+            });
+        });</script>
+    <!-- ********************************************************************************************************************* -->
+    <div data-role="page" id="contact">
+        <div data-role="header" style="background-color: aqua;">
+            <h1>Pune Institute of Computer Techonology</h1>
+            <h4>(An Autonomous Institute affiliated to Savitribai Phule Pune University)</h4>
+            <h4> AICTE APPROVED | ISO 9001:2015 | NAAC A+ Grade | NBA [All Eligible UG Programs]</h4>
+        </div>
+        <div data-role="navbar" data-grid="c">
+            <ul class="mynav" style="background-color: blanchedalmond;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About US</a></li>
+                <li><a href="#department">Departments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content" style="background-color: rgb(189, 240, 177);">
+            <h3>Call us on 1234567890</h3>
+        </div>
+
+
+        <center>
+            <div class="myfooter" data-role="footer" style="background-color: bisque;">
+
+                <h2>Quick Access</h2>
+                <h3><a href="#home">Home</a></h3>
+                <h3><a href="#aboutus">About Us</a></h3>
+                <h3><a href="#department">Department</a></h3>
+                <h3><a href="#contact">Contact</a></h3>
+
+            </div>
+        </center>
+    </div>
+    </div>
+    <script>
+        $(document).on("pagecreate", "#contact", function () {
+            $(this).on("swiperight", function () {
+                $.mobile.changePage("#home", { transition: "slide", reverse: true });
+            });
+
+            $(this).on("swipeleft", function () {
+                $.mobile.changePage("#department", { transition: "slide" });
+            });
+        });</script>
+
+
+</body>
+
+</html>
